@@ -1,0 +1,22 @@
+.label{
+    display: inline-block;
+}
+.thumbnail{
+    min-height: 450px;
+}
+
+.btn{
+    border-radius: 25px;
+}
+
+.glyphicon {
+    color: green;
+}
+
+.glyphicon-ok,
+.glyphicon-remove{
+    color: #fefefe;
+}
+p{
+    font-size: 1.5rem;
+}

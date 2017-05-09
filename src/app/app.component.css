@@ -1,0 +1,16 @@
+.navbar-brand::before{
+  content:'';
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url('./../assets/images/angular.png')no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 5px;
+  right:5px;
+  top: 10px;
+}
+
+a.navbar-brand {
+    padding-left: 35px;
+}
