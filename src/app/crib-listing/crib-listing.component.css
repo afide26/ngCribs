@@ -1,0 +1,11 @@
+button.chevron-down,
+button.chevron-up{
+  border-radius: 30px;
+  border: none;
+  padding:7px 10px;
+}
+
+button.chevron-down:focus,
+button.chevron-up:focus{
+  outline:none;
+}

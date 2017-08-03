@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  showForm:boolean = false;
+
+  handleShowForm(){
+    this.showForm = !this.showForm;
+    console.log('Form was clicked');
+  }
+
 }

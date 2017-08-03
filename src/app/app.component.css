@@ -14,3 +14,13 @@
 a.navbar-brand {
     padding-left: 35px;
 }
+
+.showForm>button{
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+
+button:focus{
+  outline: none !important;
+}

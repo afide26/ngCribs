@@ -5,6 +5,15 @@
 </nav>
 
 <div class="container">
-  <app-add-listing-form></app-add-listing-form>
+  <div class="showForm">
+    <button class="btn btn-primary pull-right" (click)="this.handleShowForm()">
+      <span 
+          class="glyphicon glyphicon-eye-open"
+          [ngClass]="{'glyphicon-eye-close': showForm}"></span> Form
+    </button>
+    <div *ngIf="showForm">
+    <app-add-listing-form></app-add-listing-form>
+    </div>
+  </div>
   <app-crib-listing></app-crib-listing>
 </div>

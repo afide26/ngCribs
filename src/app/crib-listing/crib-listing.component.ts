@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { CribsService } from './../services/cribs.service';
+import { UtilService } from './../services/util.service';
 
 @Component({
   selector: 'app-crib-listing',
@@ -10,12 +11,16 @@ import { CribsService } from './../services/cribs.service';
 })
 export class CribListingComponent implements OnInit {
   showDetails: Boolean = false;
+  sortFields: Array<string> =
+  ['address', 'area', 'bathrooms', 'bedrooms', 'type', 'price'];
   cribs: Array<any>;
   error: string;
+  sortDirection = 'asc';
 
   constructor(
     private http: Http,
-    private cribsService : CribsService
+    private cribsService : CribsService,
+    private utilService: UtilService
   ) {
   }
 
