@@ -20,3 +20,8 @@
 p{
     font-size: 1.5rem;
 }
+
+.thumbnail[_ngcontent-c3]{
+  max-width: 85%;
+  margin: 0 auto;
+}
