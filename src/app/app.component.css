@@ -31,5 +31,6 @@ button:focus{
   .showForm>button{
     margin-bottom: 20px;
     border-radius: 25px;
+    z-index: 1;
   }
 }
